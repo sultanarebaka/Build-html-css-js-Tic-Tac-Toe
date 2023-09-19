@@ -17,6 +17,22 @@ td{
    }
    
    
+table{
+       position:absolute;
+       left:50%;
+       margin-left:-150px;
+       top:50px;
+       
+       
+   }
+   
+   table tr:first-child td {
+       border-top:0;
+       
+       
+   }
+   
+
    
    
    
