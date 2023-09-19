@@ -1,2 +1,22 @@
 
 
+*{
+margin:0;
+padding:0;
+}
+
+td{
+       
+       border:2px solid black;
+       height:100px;
+       width:100px;
+       text-align:center;
+       font-family:cursive,sans-serif;
+       font-size:60px;
+       cursor:pointer;
+   }
+   
+   
+   
+   
+   
