@@ -16,3 +16,4 @@ const cells =document.querySelectorAll('.cell');
 function startGame(){
        document.querySelector(".endgame").style.display ="none";
    }   
+cells[i].innerText ='';
