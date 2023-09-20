@@ -24,3 +24,6 @@ function turnClick(square){
        turn(square.target.id, humanplayer);
        
    }
+
+
+        for (var i = 0; i < cells.length; i++) 
