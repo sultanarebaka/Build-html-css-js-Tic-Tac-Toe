@@ -42,7 +42,16 @@ table{
        
    }
 
-
+.endgame{
+      display:none;
+      width:105px;
+      top:110px;
+      background-color:
+      position:absolute;
+      left:50%;
+      margin-left:-90px;
+      
+  }
    
    
    
