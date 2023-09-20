@@ -4,5 +4,8 @@ var originalBoard;
    const aiplayer ='X';
    
    
-
-
+const cells =document.querySelectorAll('.cell');
+   
+   startGame();
+   
+   
