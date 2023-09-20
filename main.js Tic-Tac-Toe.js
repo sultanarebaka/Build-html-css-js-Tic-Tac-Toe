@@ -17,3 +17,10 @@ function startGame(){
        document.querySelector(".endgame").style.display ="none";
    }   
 cells[i].innerText ='';
+
+
+
+function turnClick(square){
+       turn(square.target.id, humanplayer);
+       
+   }
