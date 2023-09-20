@@ -1,4 +1,4 @@
-var originalBoard;
+ originalBoard;
    
    const humanplayer ='0';  
    const aiplayer ='X';
@@ -7,5 +7,9 @@ var originalBoard;
 const cells =document.querySelectorAll('.cell');
    
    startGame();
+
+
    
-   
+function startGame(){
+       document.querySelector(".endgame").style.display ="none";
+   }   
