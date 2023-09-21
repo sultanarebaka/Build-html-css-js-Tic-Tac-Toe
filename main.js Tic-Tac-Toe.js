@@ -47,3 +47,7 @@ function turn(squareId, player) {
 function bestSpot() { 
          return emptySquares()[0]; 
  }
+
+function emptySquares() { 
+         return origBoard.filter(s => typeof s == 'number'); 
+ }
