@@ -34,3 +34,11 @@ function turnClick(square){
          for (var i = 0; i < cells.length; i++) { 
                  cells[i].removeEventListener('click', turnClick, false);
 }
+
+
+function turn(squareId, player) { 
+         origBoard[squareId] = player; 
+         document.getElementById(squareId).innerText = player; 
+         let gameWon = checkWin(origBoard, player) 
+         if (gameWon) gameOver(gameWon) 
+ }
