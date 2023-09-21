@@ -28,3 +28,9 @@ function turnClick(square){
 
         for (var i = 0; i < cells.length; i++) 
             cells[i].addEventListener('click', turnClick, false);
+
+ gameWon.player == huPlayer ? "blue" : "red"; 
+    
+         for (var i = 0; i < cells.length; i++) { 
+                 cells[i].removeEventListener('click', turnClick, false);
+}
