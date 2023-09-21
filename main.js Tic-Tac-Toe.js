@@ -51,3 +51,8 @@ function bestSpot() {
 function emptySquares() { 
          return origBoard.filter(s => typeof s == 'number'); 
  }
+
+
+function minimax(newBoard, player) { 
+         var availSpots = emptySquares();
+}
