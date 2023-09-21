@@ -42,3 +42,8 @@ function turn(squareId, player) {
          let gameWon = checkWin(origBoard, player) 
          if (gameWon) gameOver(gameWon) 
  }
+
+
+function bestSpot() { 
+         return emptySquares()[0]; 
+ }
