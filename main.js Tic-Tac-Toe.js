@@ -56,3 +56,14 @@ function emptySquares() {
 function minimax(newBoard, player) { 
          var availSpots = emptySquares();
 }
+
+
+                if (player == aiPlayer) { 
+                         var result = minimax(newBoard, huPlayer); 
+                         move.score = result.score; 
+                 } else { 
+                         var result = minimax(newBoard, aiPlayer); 
+                         move.score = result.score; 
+                 }
+
+}
