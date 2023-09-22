@@ -74,3 +74,5 @@ function checkWin(board, player) {
          let plays = board.reduce((a, e, i) => 
                  (e === player) ? a.concat(i) : a, []);
 }
+
+                        var result = minimax(newBoard, huPlayer);
