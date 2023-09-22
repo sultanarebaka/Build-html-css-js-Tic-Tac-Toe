@@ -76,3 +76,7 @@ function checkWin(board, player) {
 }
 
                         var result = minimax(newBoard, huPlayer);
+
+        var moves = []; 
+         for (var i = 0; i < availSpots.length; i++) { 
+                 var move = {};
