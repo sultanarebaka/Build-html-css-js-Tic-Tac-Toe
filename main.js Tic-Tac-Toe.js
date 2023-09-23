@@ -75,21 +75,14 @@ function emptySquares() {
  }
 
 
-
-
-
 function checkWin(board, player) { 
          let plays = board.reduce((a, e, i) =>  
                  (e === player) ? a.concat(i) : a, []);
 
 
-
-
-
 function minimax(newBoard, player) { 
          var availSpots = emptySquares();
 }
-
 
                 if (player == aiPlayer) { 
                          var result = minimax(newBoard, huPlayer); 
@@ -101,15 +94,18 @@ function minimax(newBoard, player) {
 
 }
 
-
 function declareWinner(who) { 
          document.querySelector(".endgame").style.display = "block";
 }
-
-
                         var result = minimax(newBoard, huPlayer);
 
         var moves = []; 
          for (var i = 0; i < availSpots.length; i++) { 
                  var move = {};
     document.getElementById(squareId).innerText = player;
+
+
+function declareWinner(who) { 
+         document.querySelector(".endgame").style.display = "block"; 
+         document.querySelector(".endgame .text").innerText = who; 
+ }
