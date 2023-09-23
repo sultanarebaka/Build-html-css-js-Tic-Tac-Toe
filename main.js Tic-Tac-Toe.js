@@ -102,6 +102,11 @@ function minimax(newBoard, player) {
 }
 
 
+function declareWinner(who) { 
+         document.querySelector(".endgame").style.display = "block";
+}
+
+
                         var result = minimax(newBoard, huPlayer);
 
         var moves = []; 
