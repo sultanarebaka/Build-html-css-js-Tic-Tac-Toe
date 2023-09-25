@@ -31,3 +31,6 @@ function init() {
      ]; 
      render(); 
  };
+
+
+document.getElementById('board').addEventListener('click', handleTurn); 
