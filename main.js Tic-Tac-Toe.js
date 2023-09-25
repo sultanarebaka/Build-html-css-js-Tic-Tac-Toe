@@ -16,8 +16,9 @@ const winningCombos = [
  let turn = 'X'; 
  let win; 
  
-   
-   
+  
+ 
+const squares = Array.from(document.querySelectorAll('#board div'));   
    
                  
 
