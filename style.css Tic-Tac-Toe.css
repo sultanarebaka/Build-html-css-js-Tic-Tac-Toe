@@ -33,11 +33,13 @@ padding:0;
     
  }
 
-.flex-wrap { 
-     flex-wrap: wrap; 
-     height: 132px; 
-     width: 152px; 
- }
+
+
+ .flex-wrap {  
+      flex-wrap: wrap;  
+      height: 232px;  
+      width: 252px;  
+  }
 
 .square { 
      border: 1px solid black;
