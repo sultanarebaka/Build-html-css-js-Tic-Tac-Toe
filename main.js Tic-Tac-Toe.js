@@ -37,3 +37,7 @@ document.getElementById('board').addEventListener('click', handleTurn);
 
 
 init();
+
+function handleTurn() { 
+     let idx =squaress;
+}
