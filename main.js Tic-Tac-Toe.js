@@ -34,3 +34,6 @@ function init() {
 
 
 document.getElementById('board').addEventListener('click', handleTurn); 
+
+
+init();
