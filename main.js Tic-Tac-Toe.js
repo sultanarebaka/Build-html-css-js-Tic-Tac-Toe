@@ -40,4 +40,7 @@ init();
 
 function handleTurn() { 
      let idx =squaress;
-}
+ squares.findIndex(function(square) {
+        return square === event.target;
+    });
+};
