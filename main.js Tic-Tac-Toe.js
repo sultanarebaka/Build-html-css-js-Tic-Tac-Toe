@@ -44,3 +44,11 @@ function handleTurn() {
         return square === event.target;
     });
 };
+
+function render() {
+    board.forEach(function(mark, index) {
+     item into the squares[idx]
+    squares[index].textContent = mark;
+    });
+    messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
+    };
