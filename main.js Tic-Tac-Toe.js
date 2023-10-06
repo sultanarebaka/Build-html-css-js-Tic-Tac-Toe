@@ -32,10 +32,6 @@ function init() {
      render(); 
  };
 
-
-document.getElementById('board').addEventListener('click', handleTurn); 
-
-
 init();
 
 function handleTurn() { 
@@ -57,3 +53,5 @@ board[idx] = turn;
 
 
 document.getElementById('reset-button').addEventListener('click', init);
+
+document.getElementById('board').addEventListener('click', handleTurn);
