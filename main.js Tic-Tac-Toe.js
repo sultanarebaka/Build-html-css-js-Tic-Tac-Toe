@@ -52,3 +52,5 @@ function render() {
     });
     messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
     };
+
+board[idx] = turn;
