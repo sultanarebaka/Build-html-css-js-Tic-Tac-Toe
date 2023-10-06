@@ -54,3 +54,6 @@ function render() {
     };
 
 board[idx] = turn;
+
+
+document.getElementById('reset-button').addEventListener('click', init);
