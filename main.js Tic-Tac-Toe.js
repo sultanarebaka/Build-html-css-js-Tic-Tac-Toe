@@ -71,4 +71,6 @@ document.getElementById('board').addEventListener('click', handleTurn);
 
 board[idx] = turn;
     turn = turn === 'X' ? 'O' : 'X';
-  
+
+ board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) winner = board[combo[0]];
+       
