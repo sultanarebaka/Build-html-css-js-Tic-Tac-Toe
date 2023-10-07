@@ -34,6 +34,19 @@ function init() {
 
 init();
 
+
+
+
+function getWinner() {
+    let winner = null;
+    winningCombos.forEach(function(combo, index) {
+        if (board[combo[0]] &&
+        });
+      
+};
+
+
+
 function handleTurn() { 
      let idx =squaress;
  squares.findIndex(function(square) {
