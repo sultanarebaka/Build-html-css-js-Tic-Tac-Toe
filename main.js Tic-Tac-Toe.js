@@ -68,3 +68,7 @@ board[idx] = turn;
 document.getElementById('reset-button').addEventListener('click', init);
 
 document.getElementById('board').addEventListener('click', handleTurn);
+
+board[idx] = turn;
+    turn = turn === 'X' ? 'O' : 'X';
+  
