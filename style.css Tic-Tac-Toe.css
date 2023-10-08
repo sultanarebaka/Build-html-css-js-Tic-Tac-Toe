@@ -36,9 +36,11 @@ padding:0;
 
 
  .flex-wrap {  
-      flex-wrap: wrap;  
-      height: 301px;  
-      width: 305px;  
+      flex-wrap: wrap;    
+      height: 289px;  
+      width: 295px; 
+
+
   }
 
 .square { 
