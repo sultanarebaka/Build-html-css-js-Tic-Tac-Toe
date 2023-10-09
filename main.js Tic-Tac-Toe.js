@@ -23,6 +23,25 @@ document.getElementById('board').addEventListener('click', handleTurn);
 const messages = document.querySelector('h2');
 document.getElementById('reset-button').addEventListener('click', init);
 
+
+function getWinner() {
+    let winner = null;
+    winningCombos.forEach(function(combo, index) {
+        if (board[combo[0]] && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) winner = board[combo[0]];
+        });
+        return winner ? winner : board.includes('') ? null : 'T';
+};
+
+function handleTurn() {
+    let idx = squares.findIndex(function(square) {
+        return square === event.target;
+    });
+    board[idx] = turn;
+    turn = turn === 'X' ? 'O' : 'X';
+    win = getWinner();
+    render();
+};
+
 function init() { 
      board = [ 
      '', '', '', 
@@ -35,43 +54,16 @@ function init() {
 init();
 
 
-
-
-function getWinner() {
-    let winner = null;
-    winningCombos.forEach(function(combo, index) {
-        if (board[combo[0]] &&
-        });
-      
-};
-
-
-
-function handleTurn() { 
-     let idx =squaress;
- squares.findIndex(function(square) {
-        return square === event.target;
-    });
-};
-
 function render() {
     board.forEach(function(mark, index) {
-     item into the squares[idx]
+   
+
     squares[index].textContent = mark;
     });
     messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
     };
 
-board[idx] = turn;
+init();
 
 
-document.getElementById('reset-button').addEventListener('click', init);
 
-document.getElementById('board').addEventListener('click', handleTurn);
-
-board[idx] = turn;
-    turn = turn === 'X' ? 'O' : 'X';
-
- board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) winner = board[combo[0]];
-
-      messages.textContent = win === 'T' ? `That's a tie, queen!` ; 
