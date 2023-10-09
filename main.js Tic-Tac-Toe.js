@@ -1,23 +1,22 @@
 
+const winningCombos = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6], 
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+    ];
 
 
-const winningCombos = [ 
-     [0, 1, 2], 
-     [3, 4, 5], 
-     [6, 7, 8], 
-     [0, 3, 6],  
-     [1, 4, 7], 
-     [2, 5, 8], 
-     [0, 4, 8], 
-     [2, 4, 6] 
-     ];
-  
- let board; 
- let turn = 'X'; 
- let win; 
- 
-const squares = Array.from(document.querySelectorAll('#board div'));   
-   
+let board;
+let turn = 'X';
+let win;
+
+const squares = Array.from(document.querySelectorAll('#board div'));
+
 
 document.getElementById('board').addEventListener('click', handleTurn);
 const messages = document.querySelector('h2');
@@ -42,28 +41,26 @@ function handleTurn() {
     render();
 };
 
-function init() { 
-     board = [ 
-     '', '', '', 
-     '', '', '', 
-     '', '', '' 
-     ]; 
-     render(); 
- };
-
-init();
-
+function init() {
+    board = [
+    '', '', '',
+    '', '', '',
+    '', '', ''
+    ];
+    render();
+};
 
 function render() {
     board.forEach(function(mark, index) {
-   
-
+    
+    
     squares[index].textContent = mark;
     });
-    messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
+    messages.textContent = win === 'T' ? `That's a tie, Queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
     };
 
 init();
-
+      
+      
 
 
