@@ -16,12 +16,12 @@ const winningCombos = [
  let turn = 'X'; 
  let win; 
  
- 
- 
 const squares = Array.from(document.querySelectorAll('#board div'));   
-    document.getElementById('reset-button').addEventListener('click', init);         
+   
 
-
+document.getElementById('board').addEventListener('click', handleTurn);
+const messages = document.querySelector('h2');
+document.getElementById('reset-button').addEventListener('click', init);
 
 function init() { 
      board = [ 
