@@ -16,7 +16,7 @@ const winningCombos = [
  let turn = 'X'; 
  let win; 
  
-  
+ 
  
 const squares = Array.from(document.querySelectorAll('#board div'));   
     document.getElementById('reset-button').addEventListener('click', init);         
